@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="conteiner">
+      <div class="calculater">
+        <form>
+          <div class="display"><input id="display" type="text" readonly /></div>
+
+          <div>
+            <input type="button" value="AC" onclick="clearAll()" /> <input type="button" value="DE" onclick=" deleteOne()" />
+            <input type="button" value="." onclick=" toDisplay(this.value)" />
+            <input type="button" value="/" onclick=" toDisplay(this.value)" />
+          </div>
+
+          <div>
+            <input type="button" value="7" onclick=" toDisplay(this.value)" />
+            <input type="button" value="8" onclick=" toDisplay(this.value)" />
+            <input type="button" value="9" onclick=" toDisplay(this.value)" />
+            <input type="button" value="*" onclick=" toDisplay(this.value)" />
+          </div>
+
+          <div>
+            <input type="button" value="4" onclick=" toDisplay(this.value)" />
+            <input type="button" value="5" onclick=" toDisplay(this.value)" />
+            <input type="button" value="6" onclick=" toDisplay(this.value)" />
+            <input type="button" value="-" onclick=" toDisplay(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick=" toDisplay(this.value)" />
+            <input type="button" value="2" onclick=" toDisplay(this.value)" />
+            <input type="button" value="3" onclick=" toDisplay(this.value)" />
+            <input type="button" value="+" onclick=" toDisplay(this.value)" />
+          </div>
+
+          <div>
+            <input type="button" value="00" onclick=" toDisplay(this.value)" />
+            <input type="button" value="0" onclick=" toDisplay(this.value)" />
+            <input type="button" value="=" class="equal" onclick="calculater()" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
